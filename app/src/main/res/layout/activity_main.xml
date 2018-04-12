@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cl.kustom89.easyshiping.MainActivity">
+
+
+    <TextView
+        android:text="Rut:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="9dp"
+        />
+
+    <EditText
+        android:id="@+id/rutEt"
+        android:layout_marginTop="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:hint="Sin puntos ni guion"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"/>
+
+    <EditText
+        android:id="@+id/nombresEt"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/rutEt"
+        android:hint="Nombres" />
+
+    <EditText
+        android:id="@+id/apellidosEt"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rutEt"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/nombresEt"
+        android:hint="Apellidos" />
+
+    <EditText
+        android:id="@+id/fechaEt"
+        android:hint="Fecha nacimiento"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombresEt"/>
+
+
+    <EditText
+        android:id="@+id/direccionEt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fechaEt"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:hint="Direccion" />
+
+    <EditText
+        android:id="@+id/telefonoEt"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/direccionEt"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:hint="Telefono" />
+
+    <EditText
+        android:id="@+id/mailEt"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telefonoEt"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:hint="E-mail" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:text="@string/guardarSt"
+        android:layout_below="@id/mailEt"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorBlanco"/>
+
+
+
+
+
+</RelativeLayout>
